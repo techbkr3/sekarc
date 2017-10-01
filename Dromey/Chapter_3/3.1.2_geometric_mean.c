@@ -1,22 +1,23 @@
-/* Find square root
-by sekar che */
+/* Dromey 3.1.2 - Find square root of an number with mean
+ * BootCamp Code
+ * Sekar Chenniyappan
+ * 20171001 
+ */
 
+#include <stdio.h>
 
-
-#include<stdio.h>
-
-float abs (float x)
-	{	
+float abs(float x)
+{
 	if (x < 0)
-	x = -x;
+		x = -x;
+	
 	return(x);
 }
 
 float squareRoot(float x)
 {
-	float e= 0.00001;
-	
-	float g1=1;
+	float e = 0.00001;
+	float g1 = 1;
 	
 	while(abs ( g1 * g1 - x ) >= e)
 		g1 = ( x / g1 + g1 ) / 2;
@@ -26,7 +27,6 @@ float squareRoot(float x)
 
 int main()
 {
-	
 	int n;
 	int a[100];
 	float m = 1;
@@ -34,18 +34,19 @@ int main()
 	
 	printf ("Enter the count of number:");
 	scanf ("%d", &n );
-	
-	
+		
 	printf ("Enter the Numbers to find geometric mean:\n");
-	
-	for ( i = 0 ; i < n ; ++i) {
-        scanf ("%d", &a[i]);
-        m *= a[i];
+
+	for( i = 0 ; i < n ; ++i) {
+		scanf ("%d", &a[i]);
+		m *= a[i];
     }
-    printf("%f", m);
+	printf ("%f", m);
     
-	
 	printf (" %f\n",squareRoot(m));
 	
 	return(0);
 }
+
+
+

@@ -1,22 +1,24 @@
-/* X power n
-by sekar che */
-
+/* Dromey 3.7.2 - Find X power n
+ * BootCamp Code
+ * Sekar Chenniyappan
+ * 20171001 
+ */ 
 
 #include <stdio.h>
 
-int pow (int x, int n)
+int pow(int x, int n)
 {
-    int a;
-    a = x;
+	int a;
+	a = x;
     
-    if (n == 0) {
+	if(n == 0) {
 		return 1;
     } else {
-    	while (n - 1 != 0) {
-        	x *= a;
+		while(n - 1 != 0) {
+			x *= a;
         	--n;
         } 
-        return x;
+		return x;
     }
 }
 
@@ -30,7 +32,8 @@ int main()
     
     printf ( "X power n : %d", pow (x,n));
     
-    getch ();
+    getchar();
+    
     return 0;
 }
 
