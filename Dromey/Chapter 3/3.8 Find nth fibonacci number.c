@@ -9,7 +9,7 @@
 
 int fib (int n) // FIX no space between function and parameter list
 {
-    if (n == 0) { // FIX all indentation should be 8 space tabs
+    if (n == 0) { // FIX all indentation should be 8 space tabs, type 1 TAB not 8 spaces.
     	return 0;
     } else if (n == 1) {
     	return 1;
