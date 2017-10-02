@@ -14,7 +14,7 @@ int main()
 	int pseq;
 	int x;
 
-	printf ( "Enter the x :" );
+	printf ("Enter the x :" );
 	scanf ("%i", &x);
     
 	printf ("Enter the n:");
@@ -27,11 +27,11 @@ int main()
 			p *= pseq;
 		}
 		n = n / 2;
-        pseq *= pseq;
+		pseq *= pseq;
 	}
 	
 	printf ("%i", p);
-	
+
 	getchar();
 	
 	return 0;

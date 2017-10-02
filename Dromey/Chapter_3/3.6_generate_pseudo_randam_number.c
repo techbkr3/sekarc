@@ -11,9 +11,9 @@ int main()
 	int a;
 	int b;
 	int m = 4096;
-    int i;
-    int x[5000];
-    int count = 0;
+	int i;
+	int x[5000];
+	int count = 0;
     
 	for(i = 0; i < m; ++i) {
 		x[i] = i + 1;
@@ -23,15 +23,15 @@ int main()
 		b = 853;
 		a = 109;
 		x[i + 1] = (a * x[i] + b) % m;
-	} 
+	}
     
 	for(i = 0; i < m; ++i) {
 		printf("%d ", x[i]);
 	}
     
-    getchar();
+	getchar();
     
-    return 0;
+	return 0;
 }
 
 

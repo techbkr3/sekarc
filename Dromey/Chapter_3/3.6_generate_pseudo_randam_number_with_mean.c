@@ -18,7 +18,7 @@ int main()
     
 	for(i = 0; i < m; ++i) {
 		x[i] = i + 1;
-    }
+	}
     
 	for(i = 0; 0 <= x[i] <= m - 1 && count <= 4096; ++i && ++count) {
 		b = 853;
@@ -33,11 +33,11 @@ int main()
     
 	sum = sum / 4096;
     
-    printf ("\n Mean value is: %d", sum);
+	printf ("\n Mean value is: %d", sum);
     
-    getchar();
+	getchar();
     
-    return 0;
+	return 0;
 }
 
 

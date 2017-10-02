@@ -11,7 +11,7 @@ int main()
 	int n;
 	int i = 2;
 	
-	printf (" Enter the number to find prime factor : ");
+	printf ("Enter the number to find prime factor : ");
 	scanf ("%i", &n );
 	
 	while( n != 0 )
@@ -22,7 +22,7 @@ int main()
 		else {
 			n = n / i;
 			printf ( " %i ", i);
-			if( n == 1)
+		if( n == 1)
 			break;
 		}
 	}

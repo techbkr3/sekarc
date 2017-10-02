@@ -36,14 +36,14 @@ int main()
 {
 	int n;
 	
-    printf ("Enter to find n th fibonacci number : ");
-    scanf ("%d", &n);
+	printf ("Enter to find n th fibonacci number : ");
+	scanf ("%d", &n);
     
-    fib(n);
+	fib(n);
 
-    getchar();
+	getchar();
     
-    return 0;
+	return 0;
 }
 
 
