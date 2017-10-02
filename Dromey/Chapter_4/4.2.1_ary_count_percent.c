@@ -16,8 +16,8 @@ int main()
 	int j;
     
 	printf ("Enter the number of Students: ");
-    scanf ("%d", &n);
-    printf ("Enter the students mark :\n");
+	scanf ("%d", &n);
+	printf ("Enter the students mark :\n");
     
 	for( i = 0; i < n; ++i ) {
 		scanf ("%d", &a[i]);

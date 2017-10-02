@@ -18,8 +18,8 @@ int main()
 	int sum = 0;
     
 	printf ("Enter the number of Students: ");
-    scanf ("%d", &n);
-    printf ("Enter the students mark :\n");
+	scanf ("%d", &n);
+	printf ("Enter the students mark :\n");
     
 	for( i = 0; i < n; ++i ) {
 		scanf ("%d", &a[i]);
