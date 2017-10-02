@@ -14,28 +14,28 @@ int main()
 	int j;
 	int t;
     
-	printf("Enter the number of values:");
-	scanf("%d", &n);
+	printf ("Enter the number of values:");
+	scanf ("%d", &n);
     
-	printf("Enter the values:\n");
+	printf ("Enter the values:\n");
 	for(i = 0; i < n; ++i) {
-		scanf("%d", &a[i]);
-    } 
+		scanf ("%d", &a[i]);
+	}
     
 	for(i = 0, j = n-1; i < j; ++i, --j) {
 		t = a[i];
 		a[i] = a[j];
 		a[j] = t; 
-    }
+	}
     
-    printf("Array Reversal :\n");
-    for(i = 0; i < n; ++i) {
-		printf("%d ", a[i]);
-    }
+	printf ("Array Reversal :\n");
+	for(i = 0; i < n; ++i) {
+		printf ("%d ", a[i]);
+	}
     
-    getchar();
-    
-    return 0;
+	getchar();
+
+	return 0;
 }
 
 
