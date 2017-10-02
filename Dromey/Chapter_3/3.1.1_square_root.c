@@ -46,7 +46,7 @@ int main()
 	}
 	printf ("%f", m);
     
-	printf (" %f\n",squareRoot(m));
+	printf (" %f\n", squareRoot(m));
 
 	return(0);
 }
