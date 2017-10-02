@@ -40,10 +40,10 @@ int main()
 	for( i = 0 ; i < n ; ++i) {
 		scanf ("%d", &a[i]);
 		m *= a[i];
-    }
+	}
 	printf ("%f", m);
     
-	printf (" %f\n",squareRoot(m));
+	printf (" %f\n", squareRoot(m));
 	
 	return(0);
 }

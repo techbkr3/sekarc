@@ -18,9 +18,9 @@ int main()
 	scanf ("%d %d", &n, &m);
     
 	if(m > n) {
-    	t = n;
-    	n = m;
-        m = t;
+		t = n;
+		n = m;
+		m = t;
 	}
     
 	for(i = m ; i <= n ; --i) {
@@ -30,10 +30,9 @@ int main()
 	}
 	printf ("GCD is = %d", n);   
 
+	getchar();
     
-    getchar();
-    
-    return 0;
+	return 0;
 }
 
 
