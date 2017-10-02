@@ -13,22 +13,24 @@ int main()
 	int i;
 	int t;
     
-	printf ("Enter number of values:");
-	scanf ("%d", &n);
+	printf("Enter number of values:");
+	scanf("%d", &n);
     
-	for( i = 0; i < n; ++i ) {
+	for(i = 0; i < n; ++i) {
 		scanf("%d", &a[i]);
 	} 
     
-	printf ("Enter the numbers :");
-	for( i = 0; i < n; ++i ) {
+	printf("Enter the numbers :");
+	
+	for(i = 0; i < n; ++i) {
 		temp = a[i];
 		a[i] = a[n - i - 1];
 		a[n - i - 1] = t;
 	}
     
-	printf ("Array Reversal : \n"); 
-	for( i = 0; i < n; ++i ) {
+	printf("Array Reversal : \n"); 
+	
+	for(i = 0; i < n; ++i) {
 		printf("%d ", a[i]);
 	}
     

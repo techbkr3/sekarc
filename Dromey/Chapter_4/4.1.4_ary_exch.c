@@ -16,15 +16,16 @@ int main()
 	int k;
 	int t[50];
     
-	printf ("Enter the number of values :");
-	scanf ("%d", &n);
+	printf("Enter the number of values :");
+	scanf("%d", &n);
     
-	printf ("Enter the values:\n");
+	printf("Enter the values:\n");
+	
 	for( i = 0; i < n; ++i ) {
-		scanf ("%d", &a[i]);
+		scanf("%d", &a[i]);
 	} 
     
-	for( i = 0, j = 0, k = 0; i < n; ++i ) {
+	for(i = 0, j = 0, k = 0; i < n; ++i) {
 		if(a[i] % 2 != 0) {
 			t[j] = a[i];
 			++j;
@@ -35,8 +36,8 @@ int main()
 		}
 	}
     
-	for( i = 0; i < n; ++i ) {
-		printf ("%d ", t[i]);
+	for(i = 0; i < n; ++i) {
+		printf("%d ", t[i]);
 	}
     
 	getchar();

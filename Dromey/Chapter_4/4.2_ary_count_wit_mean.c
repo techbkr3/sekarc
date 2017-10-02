@@ -17,43 +17,44 @@ int main()
 	int m = 0;
 	int sum = 0;
     
-	printf ("Enter the number of Students: ");
-	scanf ("%d", &n);
-	printf ("Enter the students mark :\n");
+	printf("Enter the number of Students: ");
+	scanf("%d", &n);
+	
+	printf("Enter the students mark :\n");
     
-	for( i = 0; i < n; ++i ) {
-		scanf ("%d", &a[i]);
+	for(i = 0; i < n; ++i) {
+		scanf("%d", &a[i]);
 		sum += a[i];
 	} 
     
-	for( i = 0; i < 100; ++i ) {
+	for(i = 0; i < 100; ++i) {
 		count[i] = 0;
 	}
     
-	for( i = 0; i < n; ++i ) {
-		for( j = 0; j < 100; ++j ) {
-			if( a[i] == j ) {
+	for(i = 0; i < n; ++i) {
+		for(j = 0; j < 100; ++j) {
+			if(a[i] == j) {
 				++count[j];
 				break;
 			}
 		}  
 	}
     
-	for( i = 0; i < 100; ++i ) {
-		if( count[i] != 0 ) {
-			printf ("\nCount for %d mark = %d\n", i, count[i]);
+	for(i = 0; i < 100; ++i) {
+		if(count[i] != 0  {
+			printf("\nCount for %d mark = %d\n", i, count[i]);
 		}
 	}
 	
-	printf ("Mean is : %d", sum / n);
+	printf("Mean is : %d", sum / n);
 	
-	if( n % 2 == 0 ) {
+	if(n % 2 == 0) {
 		n = n / 2;
-		printf ("Median is : %d\n", a[n]);
+		printf("Median is : %d\n", a[n]);
 	}
 	else {
 		n = ( n / 2 ) + 1;
-		printf ("Mean is : %d", a[n]);
+		printf("Mean is : %d", a[n]);
 	}
     
 	getchar();
