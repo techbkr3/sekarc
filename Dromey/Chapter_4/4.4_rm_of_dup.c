@@ -30,7 +30,7 @@ int main()
 		}
 	}
 	
-    printf("ordered array is: \n");
+	printf("ordered array is: \n");
 	for(i = 0; i < n; ++i) {
 		printf("%d ", a[i]);
 	}
@@ -46,7 +46,7 @@ int main()
 		}
 	}
     
-    printf("\nAfter removal of dupicate: \n");
+	printf("\nAfter removal of dupicate: \n");
 	for(i = 0; i < n-1; ++i) {
 		if(a[i] > 0)
 			printf("%d ", a[i]);
