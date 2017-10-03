@@ -14,38 +14,45 @@ int main()
 	int j;
 	int t;
     
-	printf("Total : ");
+	printf("Enter the number of values:");
 	scanf("%d", &n);
-    
+
 	for(i = 0; i < n; ++i) {
 		scanf("%d", &a[i]);
 	}
-	for(i = 0; i < n; ++i) {
-		for(j = 0; j < n; ++j) {
-			if(a[i] > a[j]) {
+	for(i = 0; i < n; ++i){
+		for(j = i + 1; j < n; ++j){
+			if(a[i] > a[j]){
 				t = a[i];
 				a[i] = a[j];
-				a[j] = t;
+				a[j]= t;
 			}
 		}
 	}
-    	
+	
+    printf("ordered array is: \n");
+	for(i = 0;i < n; ++i) {
+		printf("%d ", a[i]);
+	}
+  	
 	for(i = 0; i < n; ) {
-          if(a[i] == a[i + 1]) {
-                  for(j = i; j < n; ++j) {
-                        a[j] = a[j + 1];
-                  }
-                  --n;
-          } else {
-                  ++i;
-          }
-    }
+		if(a[i] == a[i + 1]) {
+			for(j = i; j < n; ++j) {
+				a[j] = a[j + 1];
+			}
+			--n;
+		} else {
+			++i;
+		}
+	}
     
-    for(i = 0;i < n; ++i) {
-          printf("%d ", a[i]);
-    }
+    printf("\nAfter removal of dupicate: \n");
+	for(i = 0;i < n; ++i) {
+		printf("%d ", a[i]);
+	}
     
-    getchar();
+	getchar();
     
-    return 0;
+	return 0;
 }
+
