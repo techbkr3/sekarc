@@ -1,4 +1,4 @@
-/* Dromey - 4.4 Removal of dupilcates
+/* Dromey - 4.4.1 Removal of dupilcates with delete
  * BootCamp Code
  * Sekar Chenniyappan
  * 20171003
@@ -38,7 +38,7 @@ int main()
 	for(i = 0; i < n; ) {
 		if(a[i] == a[i + 1]) {
 			for(j = i; j < n; ++j) {
-				a[j] = a[j + 1];
+				a[j] = a[j + 2];
 			}
 			--n;
 		} else {
