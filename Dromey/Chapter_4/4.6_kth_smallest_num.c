@@ -36,7 +36,7 @@ int main()
 	}
 	
 	printf("ordered array is: \n");
-	for(i = 0 ;i < n; ++i) {
+	for(i = 0; i < n; ++i) {
 		printf("%d ", a[i]);
 	}
 	
