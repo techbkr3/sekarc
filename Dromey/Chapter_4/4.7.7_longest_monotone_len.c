@@ -60,7 +60,7 @@ int main()
 	for(i = 0; i < n; ++i) {
     	printf("%d", len[i]);
 	}
-	printf("Length of monotone seq: %d", pmax+1);
+	printf("\nLength of monotone seq: %d", pmax+1);
 		
 	getchar();
 	
