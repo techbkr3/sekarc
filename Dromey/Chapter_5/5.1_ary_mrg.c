@@ -46,7 +46,7 @@ int main()
 	int c[100];
 	int i;
 	int j;
-    int temp;
+	int temp;
     
 	printf("Enter the n Value:");
 	scanf("%d", &n);
